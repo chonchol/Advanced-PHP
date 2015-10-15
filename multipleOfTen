@@ -1,0 +1,17 @@
+<pre>
+<?php
+
+	$arr = range(1, 100);
+	function multipleOfTen(&$val , $key){
+		$val *=10;
+	}
+	array_walk($arr, 'multipleOfTen');
+	print_r($arr);
+
+	$arr = [];
+	$arr[][][][][] = range(1, 100);
+
+	array_walk_recursive($arr, 'multipleOfTen');
+	print_r($arr);
+?>
+</pre>
